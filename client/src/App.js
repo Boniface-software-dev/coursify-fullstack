@@ -27,7 +27,7 @@ function NavBar() {
         <Link to="/" className="nav-link">All Courses</Link>
         <Link to="/my_courses" className="nav-link">My Courses</Link>
         <Link to="/courses/new" className="nav-link">Add Course</Link>
-        {/* Placeholder for Login/Logout links (you'll implement authentication later) */}
+        {/* Placeholder for Login/Logout links */}
         <Link to="/login" className="nav-link">Login</Link>
       </div>
     </nav>

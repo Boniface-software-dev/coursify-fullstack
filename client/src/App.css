@@ -1,38 +1,112 @@
-.App {
-  text-align: center;
+/* client/src/App.css */
+
+/* Basic styling for the entire body */
+body {
+  font-family: Arial, sans-serif; /* Set a clean font */
+  line-height: 1.6; /* Improve readability of text */
+  color: #333; /* Dark gray text for good contrast */
+  background-color: #f4f4f4; /* Light gray background */
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for main page content container */
+.container {
+  padding: 20px; /* Padding inside the container */
+  max-width: 1200px; /* Max width to keep content readable on large screens */
+  margin: 0 auto; /* Center the container horizontally */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Headings styling */
+h1, h2, h3 {
+  color: #333; /* Dark gray color for headings */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* --- NavBar Styling --- */
+.navbar {
+  background-color: #333; /* Dark background */
+  padding: 1rem; /* Padding inside the nav bar */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space out items */
+  align-items: center; /* Vertically align items */
+  color: white; /* Default text color for nav items */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Subtle shadow for depth */
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-brand {
+  color: #f0f0f0; /* Slightly off-white for the brand name */
+  font-size: 1.5rem; /* Larger font size for the brand */
+  font-weight: bold; /* Bold text */
+  text-decoration: none; /* Remove underline from link */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-links {
+  display: flex; /* Use flexbox for the links */
+  gap: 1rem; /* Space between links */
+}
+
+.nav-link {
+  color: #f0f0f0; /* Color for navigation links */
+  text-decoration: none; /* Remove underline */
+  padding: 0.5rem 1rem; /* Padding around links for clickability */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.nav-link:hover {
+  background-color: #555; /* Darker background on hover */
+}
+
+/* --- Course List Page specific styles --- */
+.course-list-page h2 {
+  text-align: center; /* Center the page title */
+  margin-bottom: 25px; /* Space below the title */
+  color: #333;
+}
+
+.courses-grid {
+  display: grid; /* Use CSS Grid for the layout of course cards */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+}
+
+.course-card {
+  background-color: #fff; /* White background for cards */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Padding inside the card */
+  display: flex; /* Flexbox for content within the card */
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push link to bottom if card content varies */
+}
+
+.course-card h3 {
+  margin-top: 0; /* Remove default top margin */
+  color: #007bff; /* A nice blue color for course titles */
+}
+
+.course-card p {
+  margin-bottom: 10px; /* Space below paragraphs */
+  color: #555; /* Slightly lighter text for body content */
+}
+
+.course-card strong {
+  color: #333; /* Darker text for bold labels */
+}
+
+.view-details-button {
+  display: inline-block; /* Make it block-like but allow other content on same line */
+  background-color: #28a745; /* Green button */
+  color: white; /* White text */
+  padding: 10px 15px; /* Padding inside button */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  text-align: center; /* Center text */
+  transition: background-color 0.2s ease; /* Smooth hover effect */
+  margin-top: 15px; /* Space above button */
+}
+
+.view-details-button:hover {
+  background-color: #218838; /* Darker green on hover */
 }
